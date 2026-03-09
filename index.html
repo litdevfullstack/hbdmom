@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Mamá! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sección de bienvenida -->
+        <header class="hero">
+            <div class="floating-hearts" id="hearts"></div>
+            <h1 class="title">¡Feliz Cumpleaños!</h1>
+            <h2 class="subtitle">Mamá</h2>
+            <div class="cake-emoji">🎂</div>
+        </header>
+
+        <!-- Galería de fotos -->
+        <section class="gallery-section">
+            <h3>Momentos Especiales</h3>
+            <div class="photo-grid">
+                <div class="photo-card" onclick="showMessage(0)">
+                    <div class="photo-placeholder"><img src="/images/foto1.jpg" alt=""></div>
+                    <p>Haz clic para ver el mensaje</p>
+                </div>
+                <div class="photo-card" onclick="showMessage(1)">
+                    <div class="photo-placeholder"><img src="/images/foto3.jpg" alt=""></div>
+                    <p>Haz clic para ver el mensaje</p>
+                </div>
+                <div class="photo-card" onclick="showMessage(2)">
+                    <div class="photo-placeholder"><img src="/images/foto2.jpg" alt=""></div>
+                    <p>Haz clic para ver el mensaje</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensaje especial -->
+        <section class="message-section">
+            <div class="message-box" id="messageBox">
+                <p id="dynamicMessage">Haz clic en las fotos de arriba para descubrir mensajes especiales 💝</p>
+            </div>
+        </section>
+
+        <!-- Contador de amor -->
+        <section class="counter-section">
+            <h3>Días siendo la mejor mamá del mundo:</h3>
+            <div id="daysCounter" class="counter">Calculando...</div>
+        </section>
+
+        <!-- Botón sorpresa -->
+        <div class="surprise-section">
+            <button class="surprise-btn" onclick="triggerSurprise()">🎁 Abrir Regalo Sorpresa</button>
+            <div id="surpriseContent" class="hidden">
+                <div class="balloons">🎈🎈🎈🎈🎈</div>
+                <p class="surprise-text">¡Eres la mamá más increíble del universo! 💖</p>
+            </div>
+        </div>
+
+        <!-- Música -->
+        <div class="music-control">
+            <button id="musicBtn" onclick="toggleMusic()">🎵 Reproducir "Cancion de Cumpleaños"</button>
+        </div>
+
+        <footer>
+            <p>Hecho con ❤️ por tu hijo/a</p>
+        </footer>
+    </div>
+
+    <!-- Canvas para confeti -->
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
