@@ -1,6 +1,6 @@
 // Mensajes para cada foto (personalízalos!)
 const messages = [
-    "Mamá, gracias por cada abrazo que curaba todo. Eres mi refugio seguro. 🏠💕",
+    "Mamá, gracias por cada 'estoy aquí' que nunca falló. Eres mi paz en medio del caos. 🕊️💗",
     "Tu sacrificio y amor incondicional hacen de ti una superheroína sin capa. 🦸‍♀️✨",
     "Cada día a tu lado es un regalo. ¡Gracias por ser mi mejor amiga! 🌹💖"
 ];
@@ -243,4 +243,5 @@ window.addEventListener('resize', () => {
     const canvas = document.getElementById('confetti');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
 });
