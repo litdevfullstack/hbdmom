@@ -301,7 +301,8 @@ footer {
 @media (max-width: 768px) {
     .title { font-size: 2.5rem; }
     .subtitle { font-size: 2rem; }
-    .gallery-section { padding: 15px; }
+    .gallery-section { padding: 8px; }
     .photo-grid { grid-template-columns: 1fr; }
 
 }
+
